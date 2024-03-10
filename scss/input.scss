@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Titillium+Web:wght@400;700&family=Vina+Sans&display=swap');
+$primary:#9c1de7;
+$secondary:#ffcdab;
+$success:#2cb978;
+$danger:#f5587b;
+// custom btn
+// $btn-border-radius:0px;
+$border-radius:0;
+$btn-font-weight:bold;
+$btn-padding-x:20px;
+$input-btn-padding-x:30px;
+$body-bg:rgb(202, 202, 79);
+$display-font-family:'Vina Sans', cursive;
+$headings-font-family:'Kanit', sans-serif;
+$font-family-sans-serif:'Titillium Web', sans-serif;
+// map
+$theme-colors: (
+    "hha":rgb(75, 64, 0),
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+  "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+);
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10:$spacer * 6,
+  50:$spacer * 30,
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@include media-breakpoint-up(xl) { 
+    .box{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $primary;
+    }
+ }
+ @include media-breakpoint-between(lg,xl) {
+    .box{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $secondary;
+    }
+   }
+   @include media-breakpoint-only(md) { 
+    .box{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $success;
+    }
+ }
+ @include media-breakpoint-down(md) { 
+    .box{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $danger;
+    }
+ }
+ @include media-breakpoint-down(sm) { 
+    .box{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $secondary;
+    }
+ }

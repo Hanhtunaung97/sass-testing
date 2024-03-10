@@ -1,0 +1,21 @@
+@mixin btn($color){
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    border: 1px solid $color;
+    background-color: $color;
+}
+.btn-primary{
+@include btn($color:blue)
+}
+.btn-danger{
+    @include btn($color:red)
+}
+.btn-success{
+    @include btn($color:green)
+}
+.btn-warning{
+    @include btn($color:yellow)
+}
